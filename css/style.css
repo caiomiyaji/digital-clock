@@ -1,0 +1,89 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Wallpoet&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Wallpoet', cursive;
+}
+
+body{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: linear-gradient(40deg, #310015, #240025);
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+header{
+    height: 60px;
+    padding: 20px;
+}
+
+main{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    top: 50%;
+    transform: translatey(-50%);
+}
+
+h1{
+    font-size: 2em;
+    color: white;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.425);
+}
+
+.clock{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    color: white;
+    max-width: 100%;
+}
+
+.clock h3{
+    font-size: 1.2em;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.425);
+}
+
+.clock h2{
+    font-size: 5em;
+    letter-spacing: 0.2em;
+    text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.425);
+}
+
+.clock p{
+    font-size: 0.7em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.671);
+}
+
+@media screen and (max-width: 650px){
+    .clock h3{
+        font-size: 1em;
+        text-align: center;
+    }
+
+    .clock h2{
+        font-size: 3em;
+    }
+}
+
+@media screen and (max-width: 350px){
+    .clock h3{
+        font-size: 0.8em;
+    }
+
+    .clock h2{
+        font-size: 2em;
+    }
+}
